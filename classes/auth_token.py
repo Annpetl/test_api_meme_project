@@ -1,6 +1,5 @@
 import requests
 import allure
-
 from classes import env_service
 from classes.base_endpoint import Endpoint
 
