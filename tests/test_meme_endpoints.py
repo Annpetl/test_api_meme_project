@@ -20,6 +20,7 @@ def test_authorize_with_invalid_body(meme_authorize_request):
 
 def test_if_token_valid(meme_authorize_request):
     meme_authorize_request.is_token_valid()
+    meme_authorize_request.assert_status_200()
 
 
 def test_create_meme(authorize_token, meme_post_request, meme_delete_request):

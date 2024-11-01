@@ -7,7 +7,5 @@ class UpdateMemeRequest(Endpoint):
         body["id"] = meme_id
         self.response = requests.put(f'{Endpoint.base_url}/meme/{meme_id}', json=body,
                                      headers={"Authorization": f"{token}"})
-a        if self.response.status_code == 200:
+        if self.response.status_code == 200:
             self.json = self.response.json()
-
-
