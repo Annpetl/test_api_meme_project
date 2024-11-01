@@ -7,7 +7,7 @@ class Endpoint:
     json = None
 
     def assert_status_200(self):
-        assert self.response.status_code == 200, f'AR is {self.response.status_code}, ER 200'
+     assert self.response.status_code == 200, f'AR is {self.response.status_code}, ER 200'
 
     def assert_status_400(self):
         assert self.response.status_code == 400, f'AR is {self.response.status_code}, ER 400'
